@@ -10,7 +10,6 @@
 				background: #ffbf00;
 				text-align: center;
 			}
-
 			canvas {
 				border: 10px solid #f7347a;
 			}
@@ -32,9 +31,10 @@
 	</head>
 
 	<body>
-        <h2>Hra vytvorena pre Denisku</h2>
-		<canvas width="360" height="360"></canvas>
+		<h2>Change direction by Arrows or buttons below</h2>
 		<h1>0</h1>
+		<canvas width="360" height="360"></canvas>
+		
 
 		<script>
 			// listeners
@@ -74,7 +74,7 @@
 			function gameLoop() {
 				if (gameIsRunning) {
 					drawStuff();
-					moveStuff();
+					//moveStuff();
 					setTimeout(gameLoop, 1000 / fps);
 				}
 			}
